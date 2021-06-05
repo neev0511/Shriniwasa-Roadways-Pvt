@@ -27,6 +27,72 @@ nav{
   text-decoration: none;
   font-size: 16px;
 }
+.right{
+  color: #32699B;
+  font-size: 30px;
+  margin-left: auto;
+  margin-top: 3%;
+  margin-left: auto;
+  width: 30%;
+}
+.right-head{
+  text-align: right;
+  margin-right: 2%;
+  border-bottom: 2px solid #32699B;
+}
+.right-map{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.right-text{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 80%;
+  color: #000;
+  font-size: 10px;
+  text-align: center;
+}
+.right-text span {
+  color: #32699B;
+  font-size: 12px;
+}
+.right-text span .zonal{
+  font-size: 18px;
+}
+.left-text{
+  color: #000;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 60%;
+  display: flex;
+}
+@media screen and (max-width: 2000px) {
+  .left{
+    color: #32699B;
+    font-size: 30px;
+    width: 100%;
+    margin-top: -33%;
+  }
+  .left-head{
+    text-align: left;
+    border-bottom: 2px solid #32699B;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .left{
+    color: #32699B;
+    font-size: 30px;
+    width: 100%;
+    margin-top: -53%;
+  }
+  .left-head{
+    text-align: left;
+    border-bottom: 2px solid #32699B;
+    width: 40%;
+  }
+}
 @media screen and (max-width: 1190px) {
   .navbar{
     position: absolute;
@@ -36,8 +102,17 @@ nav{
     transform: translate(5%, -50%);
     z-index: 2;
   }
+  .right{
+    display: none;
+  }
   .logo{
     width: 300px;
+  }
+  #Image{
+    display: block;
+  }
+  .Client-Acc{
+    display: none;
   }
   .line{
     width: 30px;
@@ -70,5 +145,45 @@ nav{
   }
   .nav-links li{
     transition: all 0.5s ease 0.2s;
+  }
+
+  .left{
+    color: #32699B;
+    font-size: 30px;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .left-head{
+    text-align: left;
+    border-bottom: 2px solid #32699B;
+    width: 40%;
+  }
+
+  .left-text{
+    color: #000;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 98%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .left{
+    color: #32699B;
+    font-size: 30px;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .left-head{
+    text-align: left;
+    border-bottom: 2px solid #32699B;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .left-head{
+    text-align: left;
+    border-bottom: 2px solid #32699B;
+    width: 80%;
   }
 }
