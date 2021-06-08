@@ -10,6 +10,9 @@ nav{
   height: 10vh;
   background: #32699B;/*Background for Nav Bar*/
 }
+#Drop,#Drop2{
+  display: none;
+}
 .logo{
   width: 300px;
 }
@@ -78,6 +81,7 @@ nav{
     text-align: left;
     border-bottom: 2px solid #32699B;
     width: 40%;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -91,6 +95,7 @@ nav{
     text-align: left;
     border-bottom: 2px solid #32699B;
     width: 40%;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 1190px) {
@@ -101,6 +106,9 @@ nav{
     top: 50%;
     transform: translate(5%, -50%);
     z-index: 2;
+  }
+  .img-width{
+    width: 250px;
   }
   .right{
     display: none;
@@ -140,6 +148,27 @@ nav{
     -webkit-clip-path: circle(1500px at 90% -20%);
     pointer-events: all;
   }
+  #Drop.open,
+  #Drop2.open{
+    display: block;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+  #Drop li,
+  #Drop2 li{
+    border-bottom: 3px dotted black;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #Drop li:first-child,
+  #Drop2 li:first-child{
+    margin-top: 5px;
+  }
+  #Drop li:last-child,
+  #Drop2 li:last-child{
+    margin-bottom: 5px;
+  }
   .nav-links li a {
     font-size: 25px;
   }
@@ -157,6 +186,7 @@ nav{
     text-align: left;
     border-bottom: 2px solid #32699B;
     width: 40%;
+    margin-left: 10px;
   }
 
   .left-text{
@@ -178,6 +208,7 @@ nav{
     text-align: left;
     border-bottom: 2px solid #32699B;
     width: 40%;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -185,5 +216,6 @@ nav{
     text-align: left;
     border-bottom: 2px solid #32699B;
     width: 80%;
+    margin-left: 10px;
   }
 }
